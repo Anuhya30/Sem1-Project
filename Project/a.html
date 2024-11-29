@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="Container">
+            <nav>
+                <img src="logo.jpg" alt="No image" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </nav>
+            <div class="header-text">
+                    <p>Full stack Developer</p>
+                    <h1>Hello Everyone <br> I am <span>Anuhya</span></h1>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Personal_Portfolio.jpg" alt="">
+                </div>
+                <div class="about-col-2"></div>
+                        <h1 class="sub-title">About me</h1>
+                        <p >I am Anuhya.I am from Nellore.Currently I am pursing B.Tech 3rd year in MAdanapalle Institute  Of Technology And Science.I want to become a Full Stack Developer.My strengths are I am hardworker,patience,kind-hearted person,easily collaborate with people. </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link " onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Web development</span><br>Designing Web pages</li>
+                                <li><span>UI design</span><br>User Interface by using Figma</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>2024-current</span><br>Pursuing B.Tech III rd Year and learning Full stack</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2022</span><br>Intermediate</li>
+                                <li><span>2020</span><br>SSC</li>
+                            </ul>
+                        </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------Services----- -->
+     <div id="sevices">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="Service-list">
+                <div>
+                    <h2>Web design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sequi possimus molestiae, eos esse ad dicta doloremque obcaecati quae saepe atque! Cupiditate, repellendus. Sint autem delectus accusamus illum libero corporis.</p>
+                    <a href="#">Learn more</a>
+                    <h2>UI/UX</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sequi possimus molestiae, eos esse ad dicta doloremque obcaecati quae saepe atque! Cupiditate, repellendus. Sint autem delectus accusamus illum libero corporis.</p>
+                    <a href="#">Learn More</a>
+                    <h2>Data structures</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sequi possimus molestiae, eos esse ad dicta doloremque obcaecati quae saepe atque! Cupiditate, repellendus. Sint autem delectus accusamus illum libero corporis.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+     </div>
+     <div id="portdolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="Work-list">
+                <div class="Work">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaT4LqTgrK-QR8bA1ePRn2p8Ttmqj_wm2UDA&s" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="Sub-title">Contact me</h1>
+                    <p>Phone No:1234567891</p>
+                    <div class="form">
+                    <h2>Information Required</h2>
+                    <form action="#">
+                        <input type="Name" id="my_id" placeholder="fullname" required><br><br>
+                        <input type="Email" id="my_id" placeholder="email" required><br><br>
+                        <input type="Quieries" id="my_id" placeholder="Quiries" required><br><br>
+                        <button>Submit</button>
+                    </form>
+                </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+
+        var tablinks=document.getElementByClassName("tab-links");
+        var tabcontents=document.getElementByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablink){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tablcontent){
+                tabcontent.classList.remove("active-link");
+            }
+        }
+
+    </script>
+
+</body>
+</html>
